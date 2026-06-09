@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #8B0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container principal */
+.container {
+    background: white;
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.678);
+}
+
+/* Títulos */
+h1 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #000;
+}
+
+/* Perguntas */
+.pergunta {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #000;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #3c3c3d;
+    transform: scale(1.02);
+}
+
+/* Resultado das respostas */
+.resultado {
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Tela final */
+#telaFinal {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Pontuação */
+#pontuacaoFinal {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Ranking */
+#rankingFinal {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+/* Texto "É Labareda de Fogo" */
+#labareda {
+    font-size: 22px;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Botão da tela final */
+#telaFinal button {
+    width: 100%;
+    min-width: 150px;
+    padding: 10px 25px;
+    margin-top: 10px;
+
+    
+}
+
+/* Classes dos rankings */
+.ranking-pbx,
+.ranking-ouro,
+.ranking-prata,
+.ranking-bronze {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.ranking-pbx {
+    color: gold;
+}
+
+.ranking-ouro {
+    color: #ffd700;
+}
+
+.ranking-prata {
+    color: silver;
+}
+
+.ranking-bronze {
+    color: #cd7f32;
+}
