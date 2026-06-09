@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pitolinha Quiz</title>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+    <h1>Pitolinha Quiz</h1>
+
+    <!-- Pergunta 1 -->
+    <div class="questao">
+
+        <div class="pergunta">
+            Qual minha vandal favorita?
+        </div>
+
+        <button onclick="resposta('errado', 'resultado1')">Kuronami</button>
+        <button onclick="resposta('certo', 'resultado1')">RGX</button>
+        <button onclick="resposta('errado', 'resultado1')">Gaia</button>
+        <button onclick="resposta('errado', 'resultado1')">Champs 2021</button>
+
+        <div class="resultado" id="resultado1"></div>
+
+    </div>
+
+    <!-- Pergunta 2 -->
+    <div class="questao">
+
+        <div class="pergunta">
+            Qual Sheriff é a minha predileta?
+        </div>
+
+        <button onclick="resposta('certo', 'resultado2')">Singularidade</button>
+        <button onclick="resposta('errado', 'resultado2')">Kuronami</button>
+        <button onclick="resposta('errado', 'resultado2')">Jinx Arcane</button>
+        <button onclick="resposta('errado', 'resultado2')">Saqueadora</button>
+
+        <div class="resultado" id="resultado2"></div>
+
+    </div>
+
+    <!-- Pergunta 3 -->
+    <div class="questao">
+
+        <div class="pergunta">
+            Qual minha sensibilidade e DPI?
+        </div>
+
+        <button onclick="resposta('errado', 'resultado3')">0.15 / 1600</button>
+        <button onclick="resposta('certo', 'resultado3')">0.19 / 1600</button>
+        <button onclick="resposta('errado', 'resultado3')">0.25 / 1600</button>
+        <button onclick="resposta('errado', 'resultado3')">0.11 / 1600</button>
+
+        <div class="resultado" id="resultado3"></div>
+
+    </div>
+
+    <!-- Pergunta 4 -->
+    <div class="questao">
+
+        <div class="pergunta">
+            Qual a melhor guilda/gangue?
+        </div>
+
+        <button onclick="resposta('errado', 'resultado4')">CXV</button>
+        <button onclick="resposta('errado', 'resultado4')">TWP</button>
+        <button onclick="resposta('errado', 'resultado4')">MONTEIROS</button>
+        <button onclick="resposta('certo', 'resultado4')">PBX</button>
+
+        <div class="resultado" id="resultado4"></div>
+
+    </div>
+
+
+</div>
+
+    </script>
+
+    <script src="script.js"></script>
+
+    <!--<div id="telaFinal" style="display:none; text-align:center;"> -->
+   <div id="telaFinal" style="display:none;">
+
+    <h2>🎉 Quiz Finalizado!</h2>
+
+    <h1 id="pontuacaoFinal">0</h1>
+
+    <p id="rankingFinal"></p>
+
+    <h2 id="labareda">🔥 É Labareda de Fogo 🔥</h2>
+
+    <button onclick="reiniciarQuiz()">Jogar novamente</button>
+
+</div>
+
+</div>
+</div>
+
+</body>
+
+</html>
